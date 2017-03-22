@@ -41,7 +41,7 @@ class Wrapper(Env, gym.Wrapper):
         self.n = self.env.n
 
     def reset(self, **kwargs):
-        self._reset(**kwargs)
+        return self._reset(**kwargs)
 
 class ObservationWrapper(Wrapper, gym.ObservationWrapper):
     pass
